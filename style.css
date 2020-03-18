@@ -25,9 +25,8 @@ header{
 header h1{
     margin: 0;
     font-family: monospace;
-
- 
 }
+
 .inputs{
     padding-top: 6px;
     display: grid;
@@ -49,7 +48,7 @@ header h1{
 }
 
 .input-container:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
     
 }
 
