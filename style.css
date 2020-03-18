@@ -10,14 +10,13 @@
 }
 
 body{
-    max-height: 100% !important;
-    max-width: 100% !important;
+    max-height: 100%;
+    max-width: 100%;
     margin: 0;
   
 }
 header{
     text-align: center;
-
     padding: 10px 10px ;
     color: whitesmoke;
     background: -webkit-gradient(linear, left top, right top, from(rgb(127, 167, 165)), to(#2d4b79));
