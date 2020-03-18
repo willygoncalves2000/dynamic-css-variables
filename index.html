@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <header>
+            <h1>Dynamic CSS Variables</h1>
+        </header>
+        <div class="inputs">
+
+            <div class="input-container ">
+                <label for="position">Position:</label>
+                <input type="range" name="position" min="0" max="100" value="0"
+                    oninput="changeValue('position', this.value)">
+            </div>
+
+            <div class="input-container">
+                <label for="background">Background:</label>
+                <input type="color" name="background" value="#000" onchange="changeValue('background', this.value)">
+            </div>
+
+            <div class="input-container">
+                <label for="border-radius">Border Radius:</label>
+                <input type="range" name="border-radius" min="0" max="50" value="0"
+                    oninput="changeValue('border-radius', this.value)">
+            </div>
+
+            <div class="input-container">
+                <label for="text">Texto:</label>
+                <input type="text" name="text" id="text" value="" onchange="setText(this.value)">
+            </div>
+
+            <div class="input-container">
+                <label for="width">Lagura:</label>
+                <input type="range" name="width" min="0" max="100" value="0" oninput="changeValue('width', this.value)">
+            </div>
+
+            <div class="input-container">
+                <label for="color">Text Color:</label>
+                <input type="color" name="color" value="#fffff0" onchange="changeValue('color', this.value)">
+            </div>
+
+            <div class="input-container">
+                <label for="height">Altura:</label>
+                <input type="range" name="height" min="0" max="100" value="0"
+                    oninput="changeValue('height', this.value)">
+            </div>
+
+            <div class="input-container">
+                <label for="font-size">Font Size:</label>
+                <input type="range" name="font-size" min="0" max="400" value="0"
+                    oninput="changeValue('font-size', this.value)">
+            </div>
+
+        </div>
+
+        <div class="rectangle-container">
+            <div class="rectangle" id="rectangle">
+                <p id="p-text"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
